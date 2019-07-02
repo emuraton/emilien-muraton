@@ -1,9 +1,13 @@
 import styled from 'styled-components';
+import { EiffelTower } from '../svgs';
 
 //TODO remove it later
 export const Container = styled.section`
-  margin: 0 10%;
+  background-image: linear-gradient(transparent 95%, #663399 0);
   color: black;
+`;
+export const MarginWrapper = styled.div`
+  margin: 0 10%;
 `;
 
 export const Heading = styled.h1`
@@ -16,4 +20,8 @@ export const Description = styled.p`
   font-size: 1.5rem;
   font-weight: 400;
   margin: 0 0 1rem 0;
+`;
+
+export const EiffelTowerWrapper = styled.div`
+  text-align: right;
 `;
