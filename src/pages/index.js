@@ -7,7 +7,7 @@ import Intro from '../components/Intro';
 import './index.css';
 
 const IndexPage = () => (
-  <div style={{ color: '#fff', height: '2000px' }}>
+  <div>
     <Intro />
   </div>
 );

@@ -13,8 +13,12 @@ import {
 const Intro = () => (
   <Container>
     <MarginWrapper>
-      <Heading>Hello there!</Heading>
-      <Description>Senior frontend developer</Description>
+      <Heading>Hey there!</Heading>
+      <Description>
+        I'm Emilien, Frontend developer based in London, mainly working with
+        React and React Native environments. I enjoy working on on both the
+        "front of the front" and "back of the front".
+      </Description>
       <SocialMedias />
     </MarginWrapper>
     <Cloud first />
