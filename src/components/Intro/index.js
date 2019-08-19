@@ -1,7 +1,7 @@
 import React from 'react';
 
 import SocialMedias from '../socialMedias';
-import { EiffelTower } from '../svgs';
+import { EiffelTower, Cloud } from '../svgs';
 import {
   Heading,
   Container,
@@ -10,17 +10,19 @@ import {
   EiffelTowerWrapper,
 } from './styles';
 
-const intro = () => (
+const Intro = () => (
   <Container>
     <MarginWrapper>
       <Heading>Hello there!</Heading>
       <Description>Senior frontend developer</Description>
       <SocialMedias />
     </MarginWrapper>
+    <Cloud first />
+    <Cloud />
     <EiffelTowerWrapper>
       <EiffelTower />
     </EiffelTowerWrapper>
   </Container>
 );
 
-export default intro;
+export default Intro;
