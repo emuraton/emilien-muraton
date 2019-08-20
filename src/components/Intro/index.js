@@ -2,6 +2,7 @@ import React from 'react';
 
 import SocialMedias from '../socialMedias';
 import { EiffelTower, Cloud } from '../svgs';
+import { BirdContainer, Bird } from '../svgs/bird';
 import {
   Heading,
   Container,
@@ -23,6 +24,9 @@ const Intro = () => (
     </MarginWrapper>
     <Cloud first />
     <Cloud />
+    <BirdContainer>
+      <Bird />
+    </BirdContainer>
     <EiffelTowerWrapper>
       <EiffelTower />
     </EiffelTowerWrapper>
