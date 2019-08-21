@@ -1,8 +1,9 @@
 import React from 'react';
 
 import SocialMedias from '../socialMedias';
-import { EiffelTower, Cloud } from '../svgs';
-import { BirdContainer, Bird } from '../svgs/bird';
+import Cloud from '../svgs/Cloud';
+import EiffelTower from '../svgs/EiffelTower';
+import { BirdContainer, Bird } from '../svgs/Bird';
 import {
   Heading,
   Container,

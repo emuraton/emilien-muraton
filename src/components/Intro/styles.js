@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { EiffelTower } from '../svgs';
 
 //TODO remove it later
 export const Container = styled.section`
