@@ -24,15 +24,15 @@ const flyRight = keyframes`
   }
 
   60% {
-    transform: translateY(2vh) translateX(70vw) scale(0.9);
+    transform: translateY(-5vh) translateX(70vw) scale(0.9);
   }
 
   75% {
-    transform: translateY(0vh) translateX(90vw) scale(0.9);
+    transform: translateY(-10vh) translateX(90vw) scale(0.9);
   }
 
   90% {
-    transform: translateY(0vh) translateX(110vw) scale(1);
+    transform: translateY(-20vh) translateX(110vw) scale(1);
   }
 
   100% {
