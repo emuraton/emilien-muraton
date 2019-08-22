@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { maxSizes } from '../../utils/breakpoints';
 
 //TODO remove it later
 export const Container = styled.section`
@@ -15,6 +16,11 @@ export const Heading = styled.h1`
   font-size: 5rem;
   font-weight: 800;
   margin-bottom: 1.8rem;
+
+  @media ${maxSizes.mobile} {
+    margin-top: 25%;
+    font-size: 3rem;
+  }
 `;
 
 export const Description = styled.p`
@@ -28,4 +34,8 @@ export const EiffelTowerWrapper = styled.div`
   position: fixed;
   bottom: 32%;
   right: 10%;
+
+  @media ${maxSizes.mobile} {
+    display: none;
+  }
 `;

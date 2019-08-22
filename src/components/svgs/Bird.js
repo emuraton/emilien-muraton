@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { maxSizes } from '../../utils/breakpoints';
 
 const flyCycle = keyframes`
   100% {
@@ -58,4 +59,8 @@ export const BirdContainer = styled.div`
   z-index: 3;
 
   animation: ${flyRight} 10s linear infinite;
+
+  @media ${maxSizes.mobile} {
+    display: none;
+  }
 `;
