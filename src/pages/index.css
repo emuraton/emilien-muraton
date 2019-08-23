@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: Roboto, sans-serif;
+  font-family: 'ff-meta-serif-web-pro', Georgia, serif;
   font-weight: 400;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -11,5 +11,4 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  /* background: #1b2125; */
 }

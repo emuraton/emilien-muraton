@@ -10,27 +10,30 @@ import {
   Description,
   MarginWrapper,
   EiffelTowerWrapper,
+  FlexWrapper,
 } from './styles';
 
 const Intro = () => (
   <Container>
-    <MarginWrapper>
-      <Heading>Hey there!</Heading>
-      <Description>
-        I'm Emilien, Frontend developer based in London, mainly working with
-        React and React Native environments. I enjoy working on on both the
-        "front of the front" and "back of the front".
-      </Description>
-      <SocialMedias />
-    </MarginWrapper>
-    <Cloud first />
-    <Cloud />
-    <BirdContainer>
-      <Bird />
-    </BirdContainer>
-    <EiffelTowerWrapper>
-      <EiffelTower />
-    </EiffelTowerWrapper>
+    <FlexWrapper>
+      <MarginWrapper>
+        <Heading>Hey there!</Heading>
+        <Description>
+          I'm Emilien, Frontend developer based in London, mainly working with
+          React and React Native environments. I enjoy working on on both the
+          "front of the front" and "back of the front".
+        </Description>
+        <SocialMedias />
+      </MarginWrapper>
+      <Cloud first />
+      <Cloud />
+      <BirdContainer>
+        <Bird />
+      </BirdContainer>
+      <EiffelTowerWrapper>
+        <EiffelTower />
+      </EiffelTowerWrapper>
+    </FlexWrapper>
   </Container>
 );
 
