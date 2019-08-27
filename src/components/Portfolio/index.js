@@ -1,0 +1,24 @@
+import React from 'react';
+
+import Project from '../Project';
+
+import ecommerceImg from '../../images/ecommerce-mobile.png';
+import ecommerceRoomImg from '../../images/ecommerce-mobile-room.png';
+import { Section, Title } from './styles';
+
+const Portfolio = () => (
+  <>
+    <Section>
+      <Title>Portfolio</Title>
+    </Section>
+    <Project
+      title="Ecommerce mobile site"
+      description="A simple mobile version of an ecommerce website made with Next.js /
+          React. My main goal was to create a simple UI / UX on mobile."
+      url="https://ecommerce-next-otznrnxhbb.now.sh/"
+      images={[ecommerceImg, ecommerceRoomImg]}
+    />
+  </>
+);
+
+export default Portfolio;

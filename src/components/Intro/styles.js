@@ -29,9 +29,10 @@ export const Heading = styled.h1`
 
 export const Description = styled.p`
   max-width: 800px;
+  margin: 0 0 1.5rem 0;
   font-size: 1.5rem;
   font-weight: 300;
-  margin: 0 0 1.5rem 0;
+  line-height: 1.5em;
 `;
 
 export const EiffelTowerWrapper = styled.div`

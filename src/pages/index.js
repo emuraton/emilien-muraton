@@ -1,15 +1,15 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
-import SEO from '../components/seo';
 import Intro from '../components/Intro';
+import Portfolio from '../components/Portfolio';
 
 import './index.css';
 
 const IndexPage = () => (
-  <div>
+  <>
     <Intro />
-  </div>
+    <Portfolio />
+  </>
 );
 
 export default IndexPage;
