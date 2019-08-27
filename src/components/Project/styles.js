@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { maxSizes } from '../../utils/breakpoints';
+
 export const ArticleTitle = styled.h3`
   text-align: center;
   font-size: 2.5rem;
@@ -28,11 +30,18 @@ export const ArticleImg = styled.img`
   height: 560px;
   object-fit: contain;
   margin-right: ${props => props.first && '20px'};
+
+  @media ${maxSizes.mobile} {
+    display: ${props => props.first && 'none'};
+  }
 `;
 
-export const ArticleSection = styled.section``;
+export const ArticleSection = styled.section`
+  border-bottom: ${props => props.withBorderBottom && '1px solid #f1f1f1'};
+  padding-bottom ${props => props.withBorderBottom && '5em'};
+`;
 
-export const Spacing = styled.hr`
+export const Separator = styled.hr`
   width: 6%;
   background-color: #c5c5c5;
 `;

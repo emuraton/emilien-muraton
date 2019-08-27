@@ -1,11 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { maxSizes } from '../../utils/breakpoints';
+
 const EiffelTowerSVG = styled.svg`
   height: 220px;
   width: 200px;
   margin-bottom: 15px;
   transform: scale(3);
+
+  @media ${maxSizes.mobile} {
+    transform: scale(1.2);
+  }
 `;
 
 const EiffelTower = ({ className }) => (

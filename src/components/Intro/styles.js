@@ -17,12 +17,11 @@ export const MarginWrapper = styled.div`
 `;
 
 export const Heading = styled.h1`
-  font-size: 4.5rem;
-  font-weight: 700;
+  font-size: 4rem;
+  font-weight: 600;
   margin-bottom: 1.8rem;
 
   @media ${maxSizes.mobile} {
-    margin-top: 25%;
     font-size: 3rem;
   }
 `;
@@ -41,6 +40,7 @@ export const EiffelTowerWrapper = styled.div`
   right: 10%;
 
   @media ${maxSizes.mobile} {
-    display: none;
+    bottom: 10%;
+    right: 3%;
   }
 `;

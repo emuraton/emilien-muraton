@@ -11,3 +11,9 @@ export const Title = styled.h2`
   font-weight: 600;
   margin: 0;
 `;
+
+export const Separator = styled.hr`
+  width: 100%;
+  border-bottom: 1px solid #f1f1f1;
+  margin: 5em 0;
+`;

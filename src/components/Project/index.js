@@ -6,25 +6,29 @@ import {
   ArticleDescription,
   ArticleImg,
   ArticleSection,
-  Spacing,
+  ArticleImgContainer,
+  Separator,
 } from './styles';
 
-const Project = ({ title, description, url, images }) => (
-  <ArticleSection>
-    <ArticleContainer>
-      <ArticleTitle>{title}</ArticleTitle>
-      <Spacing />
-      <ArticleDescription>{description}</ArticleDescription>
+const Project = ({ title, description, url, images, withBorderBottom }) => {
+  const hasMutltipleImgs = images.length >= 1;
+  return (
+    <ArticleSection withBorderBottom={withBorderBottom}>
       <ArticleContainer>
-        <a href={url} target="_blank">
-          <>
-            <ArticleImg src={images[0]} first alt="" />
-            {images[1] && <ArticleImg src={images[1]} alt="" />}
-          </>
-        </a>
+        <ArticleTitle>{title}</ArticleTitle>
+        <Separator />
+        <ArticleDescription>{description}</ArticleDescription>
+        <ArticleImgContainer>
+          <a href={url} target="_blank">
+            <>
+              <ArticleImg src={images[0]} first={hasMutltipleImgs} alt="" />
+              {hasMutltipleImgs && <ArticleImg src={images[1]} alt="" />}
+            </>
+          </a>
+        </ArticleImgContainer>
       </ArticleContainer>
-    </ArticleContainer>
-  </ArticleSection>
-);
+    </ArticleSection>
+  );
+};
 
 export default Project;
