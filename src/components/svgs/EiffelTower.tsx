@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import styled from 'styled-components';
 
 import { maxSizes } from '../../utils/breakpoints';
@@ -14,7 +14,11 @@ const EiffelTowerSVG = styled.svg`
   }
 `;
 
-const EiffelTower = ({ className }) => (
+interface IEiffelTowerProps {
+  className?: string;
+}
+
+const EiffelTower: React.FC<IEiffelTowerProps> = ({ className }) => (
   <EiffelTowerSVG
     fill="#663399"
     preserveAspectRatio="xMaxYMax meet"

@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 import {
   ArticleTitle,
@@ -10,7 +10,21 @@ import {
   Separator,
 } from './styles';
 
-const Project = ({ title, description, url, images, withBorderBottom }) => {
+interface IProjectProps {
+  title: string;
+  description: string;
+  url: string;
+  images: string[];
+  withBorderBottom?: boolean;
+}
+
+const Project: React.FC<IProjectProps> = ({
+  title,
+  description,
+  url,
+  images,
+  withBorderBottom,
+}) => {
   const hasMutltipleImgs = images.length >= 1;
   return (
     <ArticleSection withBorderBottom={withBorderBottom}>

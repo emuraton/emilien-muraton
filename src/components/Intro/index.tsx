@@ -1,9 +1,11 @@
-import React from 'react';
+import * as React from 'react';
 
 import SocialMedias from '../socialMedias';
 import Cloud from '../svgs/Cloud';
 import EiffelTower from '../svgs/EiffelTower';
 import { BirdContainer, Bird } from '../svgs/Bird';
+
+// @ts-ignore
 import {
   Heading,
   Container,
