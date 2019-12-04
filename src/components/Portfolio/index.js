@@ -4,7 +4,8 @@ import Project from '../Project';
 
 import ecommerceImg from '../../images/ecommerce-mobile.png';
 import ecommerceRoomImg from '../../images/ecommerce-mobile-room.png';
-import { Section, Title, Separator } from './styles';
+import exchangeRateImg from '../../images/exchange-rate.png';
+import { Section, Title } from './styles';
 
 const Portfolio = () => (
   <>
@@ -20,8 +21,14 @@ const Portfolio = () => (
       withBorderBottom
     />
     <Project
-      title="Music player app"
-      description="Early stage app with fun animation / UI"
+      title="Exchange rate tool"
+      description="Simple tool to exchange money between pockets"
+      url="https://github.com/emuraton/exchange-screen/"
+      images={[exchangeRateImg]}
+    />
+    <Project
+      title="Music player - Native app"
+      description="Early stage native app with fun animation / UI"
       url="https://github.com/emuraton/musicApp/"
       images={[ecommerceImg]}
     />
