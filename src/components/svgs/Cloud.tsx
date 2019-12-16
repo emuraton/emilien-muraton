@@ -1,6 +1,8 @@
 import * as React from 'react';
 import styled, { keyframes } from 'styled-components';
 
+import { maxSizes } from '../../utils/breakpoints';
+
 const cloudAnimation = keyframes`
   0% { transform: translateX(10vw); }
   100% { transform: translateX(100vw); }
@@ -13,6 +15,10 @@ const CloudSVG = styled.svg`
   animation: ${cloudAnimation} 30s linear infinite;
   margin-left: ${props => props.first && '400px'};
   bottom: ${props => (props.first ? '160px' : '200px')};
+
+  @media ${maxSizes.mobile} {
+    display: none;
+  }
 `;
 
 const Cloud = props => (

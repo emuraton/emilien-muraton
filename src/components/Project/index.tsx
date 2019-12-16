@@ -16,6 +16,7 @@ interface IProjectProps {
   url: string;
   images: string[];
   withBorderBottom?: boolean;
+  isApp?: boolean;
 }
 
 const Project: React.FC<IProjectProps> = ({
@@ -24,8 +25,9 @@ const Project: React.FC<IProjectProps> = ({
   url,
   images,
   withBorderBottom,
+  isApp,
 }) => {
-  const hasMutltipleImgs = images.length >= 1;
+  const hasMutltipleImgs = images.length > 1;
   return (
     <ArticleSection withBorderBottom={withBorderBottom}>
       <ArticleContainer>
@@ -35,8 +37,15 @@ const Project: React.FC<IProjectProps> = ({
         <ArticleImgContainer>
           <a href={url} target="_blank">
             <>
-              <ArticleImg src={images[0]} first={hasMutltipleImgs} alt="" />
-              {hasMutltipleImgs && <ArticleImg src={images[1]} alt="" />}
+              <ArticleImg
+                src={images[0]}
+                first={hasMutltipleImgs}
+                alt=""
+                isApp={isApp}
+              />
+              {hasMutltipleImgs && (
+                <ArticleImg src={images[1]} alt="" isApp={isApp} />
+              )}
             </>
           </a>
         </ArticleImgContainer>

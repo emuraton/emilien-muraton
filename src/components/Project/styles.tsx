@@ -10,12 +10,17 @@ export const ArticleTitle = styled.h3`
 `;
 
 export const ArticleContainer = styled.article`
-  display flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
 export const ArticleDescription = styled.p`
+  @media ${maxSizes.mobile} {
+    width: 80%;
+    text-align: left;
+  }
+
   width: 60%;
   text-align: center;
   font-size: 1.3rem;
@@ -24,6 +29,7 @@ export const ArticleDescription = styled.p`
 
 export const ArticleImgContainer = styled.div`
   display: flex;
+  text-align: center;
 `;
 
 export const ArticleImg = styled.img`
@@ -32,13 +38,15 @@ export const ArticleImg = styled.img`
   margin-right: ${props => props.first && '20px'};
 
   @media ${maxSizes.mobile} {
-    display: ${props => props.first && 'none'};
+    width: ${props => (props.isApp ? '40%' : '100%')};
+    height: 100%;
+    max-height: 260px;
   }
 `;
 
 export const ArticleSection = styled.section`
   border-bottom: ${props => props.withBorderBottom && '1px solid #f1f1f1'};
-  padding-bottom ${props => props.withBorderBottom && '5em'};
+  padding-bottom: ${props => props.withBorderBottom && '5em'};
 `;
 
 export const Separator = styled.hr`
