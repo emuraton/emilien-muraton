@@ -42,17 +42,17 @@ const Github = () => (
 const SocialMedias = () => (
   <List>
     <Item>
-      <a href="#">
+      <a href="https://twitter.com/emilien_muraton/">
         <Twitter />
       </a>
     </Item>
     <Item>
-      <a href="#">
+      <a href="https://www.linkedin.com/in/emilien-muraton-92b334a1/">
         <Linkedin />
       </a>
     </Item>
     <Item>
-      <a href="#">
+      <a href="https://github.com/emuraton/">
         <Github />
       </a>
     </Item>
