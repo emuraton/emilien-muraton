@@ -30,17 +30,23 @@ export const ArticleDescription = styled.p`
 export const ArticleImgContainer = styled.div`
   display: flex;
   text-align: center;
+  overflow: hidden;
 `;
 
 export const ArticleImg = styled.img`
   height: 560px;
   object-fit: contain;
   margin-right: ${props => props.first && '20px'};
+  transition: 500ms ease;
 
   @media ${maxSizes.mobile} {
     width: ${props => (props.isApp ? '40%' : '100%')};
     height: 100%;
     max-height: 260px;
+  }
+
+  &:hover {
+    transform: scale(1.05) !important;
   }
 `;
 
