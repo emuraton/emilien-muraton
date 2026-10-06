@@ -1,15 +1,13 @@
-import * as React from 'react';
+'use client';
 
 import Intro from '../components/Intro';
 import Portfolio from '../components/Portfolio';
 
-import './index.css';
-
-const IndexPage = () => (
+const HomePage = () => (
   <>
     <Intro />
     <Portfolio />
   </>
 );
 
-export default IndexPage;
+export default HomePage;

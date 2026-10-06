@@ -1,13 +1,9 @@
-import * as React from 'react';
-
-import Project from '../Project';
-
 import ecommerceImg from '../../images/ecommerce-mobile.png';
 import ecommerceRoomImg from '../../images/ecommerce-mobile-room.png';
 import exchangeRateImg from '../../images/exchange-rate.png';
 import musicAppGif from '../../images/music-app.gif';
+import Project from '../Project';
 
-// @ts-ignore
 import { Section, Title } from './styles';
 
 const Portfolio = () => (
