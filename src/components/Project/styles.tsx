@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styled from 'styled-components';
 
 import { maxSizes } from '../../utils/breakpoints';
@@ -42,7 +43,7 @@ export const ArticleImgContainer = styled.div`
   overflow: hidden;
 `;
 
-export const ArticleImg = styled.img<ArticleImgProps>`
+export const ArticleImg = styled(Image)<ArticleImgProps>`
   height: 560px;
   object-fit: contain;
   margin-right: ${({ $first }) => ($first ? '20px' : 0)};

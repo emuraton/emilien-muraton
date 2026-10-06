@@ -1,11 +1,13 @@
+'use client';
+
 import Intro from '../components/Intro';
 import Portfolio from '../components/Portfolio';
 
-const IndexPage = () => (
+const HomePage = () => (
   <>
     <Intro />
     <Portfolio />
   </>
 );
 
-export default IndexPage;
+export default HomePage;

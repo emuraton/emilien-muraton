@@ -8,9 +8,8 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "start": "next start",
     "test": "echo 'No tests'",
-    "lint": "tsc --noEmit"
+    "lint": "next typegen && tsc --noEmit"
   },
   "dependencies": {
     "next": "^16.3.8",

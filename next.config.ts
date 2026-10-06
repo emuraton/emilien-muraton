@@ -5,6 +5,10 @@ const nextConfig: NextConfig = {
   compiler: {
     styledComponents: true,
   },
+  images: {
+    unoptimized: true,
+  },
+  output: 'export',
   turbopack: {
     root: path.join(__dirname, '../..'),
   },

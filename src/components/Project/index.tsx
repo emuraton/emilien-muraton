@@ -39,13 +39,13 @@ const Project: React.FC<IProjectProps> = ({
           <a href={url} target="_blank" rel="noreferrer">
             <>
               <ArticleImg
-                src={images[0].src}
+                src={images[0]}
                 $first={hasMutltipleImgs}
-                alt=""
+                alt={title}
                 $isApp={isApp}
               />
               {hasMutltipleImgs && (
-                <ArticleImg src={images[1].src} alt="" $isApp={isApp} />
+                <ArticleImg src={images[1]} alt="" $isApp={isApp} />
               )}
             </>
           </a>

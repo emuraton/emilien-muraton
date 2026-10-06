@@ -2,10 +2,16 @@
 
 Portfolio built with Next.js.
 
-From the repository root:
-
 ```sh
-yarn workspace @toggle/test dev
+yarn dev
 ```
 
 Open http://localhost:3000.
+
+Generate the static site:
+
+```sh
+yarn build
+```
+
+The exported files are written to `out/`.
