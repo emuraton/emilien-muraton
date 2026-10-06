@@ -1,12 +1,13 @@
+import type { StaticImageData } from 'next/image';
 import * as React from 'react';
 
 import {
-  ArticleTitle,
   ArticleContainer,
   ArticleDescription,
   ArticleImg,
-  ArticleSection,
   ArticleImgContainer,
+  ArticleSection,
+  ArticleTitle,
   Separator,
 } from './styles';
 
@@ -14,7 +15,7 @@ interface IProjectProps {
   title: string;
   description: string;
   url: string;
-  images: string[];
+  images: StaticImageData[];
   withBorderBottom?: boolean;
   isApp?: boolean;
 }
@@ -29,22 +30,22 @@ const Project: React.FC<IProjectProps> = ({
 }) => {
   const hasMutltipleImgs = images.length > 1;
   return (
-    <ArticleSection withBorderBottom={withBorderBottom}>
+    <ArticleSection $withBorderBottom={withBorderBottom}>
       <ArticleContainer>
         <ArticleTitle>{title}</ArticleTitle>
         <Separator />
         <ArticleDescription>{description}</ArticleDescription>
         <ArticleImgContainer>
-          <a href={url} target="_blank">
+          <a href={url} target="_blank" rel="noreferrer">
             <>
               <ArticleImg
-                src={images[0]}
-                first={hasMutltipleImgs}
+                src={images[0].src}
+                $first={hasMutltipleImgs}
                 alt=""
-                isApp={isApp}
+                $isApp={isApp}
               />
               {hasMutltipleImgs && (
-                <ArticleImg src={images[1]} alt="" isApp={isApp} />
+                <ArticleImg src={images[1].src} alt="" $isApp={isApp} />
               )}
             </>
           </a>

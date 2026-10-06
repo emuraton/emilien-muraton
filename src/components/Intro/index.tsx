@@ -1,18 +1,15 @@
-import * as React from 'react';
-
 import SocialMedias from '../socialMedias';
+import { Bird, BirdContainer } from '../svgs/Bird';
 import Cloud from '../svgs/Cloud';
 import EiffelTower from '../svgs/EiffelTower';
-import { BirdContainer, Bird } from '../svgs/Bird';
 
-// @ts-ignore
 import {
-  Heading,
   Container,
   Description,
-  MarginWrapper,
   EiffelTowerWrapper,
   FlexWrapper,
+  Heading,
+  MarginWrapper,
 } from './styles';
 
 const Intro = () => (

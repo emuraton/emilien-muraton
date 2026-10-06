@@ -1,6 +1,8 @@
 html {
   box-sizing: border-box;
-  font-family: 'ff-meta-serif-web-pro', Georgia, serif;
+  color-scheme: light;
+  background-color: Canvas;
+  font-family: ff-meta-serif-web-pro, Georgia, serif;
   font-weight: 400;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
