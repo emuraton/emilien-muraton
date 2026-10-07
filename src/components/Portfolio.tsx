@@ -1,16 +1,14 @@
-import ecommerceImg from '../../images/ecommerce-mobile.png';
-import ecommerceRoomImg from '../../images/ecommerce-mobile-room.png';
-import exchangeRateImg from '../../images/exchange-rate.png';
-import musicAppGif from '../../images/music-app.gif';
-import Project from '../Project';
-
-import { Section, Title } from './styles';
+import ecommerceImg from '../images/ecommerce-mobile.png';
+import ecommerceRoomImg from '../images/ecommerce-mobile-room.png';
+import exchangeRateImg from '../images/exchange-rate.png';
+import musicAppGif from '../images/music-app.gif';
+import Project from './Project';
 
 const Portfolio = () => (
   <>
-    <Section>
-      <Title>Portfolio</Title>
-    </Section>
+    <section className="bg-portfolio py-20">
+      <h2 className="m-0 text-center text-[4rem] font-semibold">Portfolio</h2>
+    </section>
     <Project
       title="Ecommerce mobile site"
       description="A simple version of an ecommerce website made with Next.js /

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
-import { StyledComponentsRegistry } from './StyledComponentsRegistry';
 import './globals.css';
 
 const SITE_DESCRIPTION =
@@ -32,9 +31,7 @@ export interface RootLayoutProps {
 
 const RootLayout = ({ children }: RootLayoutProps) => (
   <html lang="en">
-    <body>
-      <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
-    </body>
+    <body>{children}</body>
   </html>
 );
 
