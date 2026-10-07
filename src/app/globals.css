@@ -1,3 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #663399;
+  --color-cloud: #f7f1e6;
+  --color-divider: #f1f1f1;
+  --color-portfolio: #f8f8f8;
+  --color-separator: #c5c5c5;
+  --animate-bird-flight: bird-flight 10s linear infinite;
+  --animate-bird-wings: bird-wings 1s steps(10) infinite;
+  --animate-cloud-drift: cloud-drift 30s linear infinite;
+
+  @keyframes bird-flight {
+    0% {
+      transform: translateX(-10vw) scale(0.5);
+    }
+
+    15% {
+      transform: translateY(2vh) translateX(10vw) scale(0.6);
+    }
+
+    30% {
+      transform: translateY(0) translateX(30vw) scale(0.7);
+    }
+
+    45% {
+      transform: translateY(4vh) translateX(50vw) scale(0.8);
+    }
+
+    60% {
+      transform: translateY(-5vh) translateX(70vw) scale(0.9);
+    }
+
+    75% {
+      transform: translateY(-10vh) translateX(90vw) scale(0.9);
+    }
+
+    90% {
+      transform: translateY(-20vh) translateX(110vw);
+    }
+
+    100% {
+      transform: translateY(0) translateX(110vw);
+    }
+  }
+
+  @keyframes bird-wings {
+    100% {
+      background-position: -3600px 0;
+    }
+  }
+
+  @keyframes cloud-drift {
+    0% {
+      transform: translateX(10vw);
+    }
+
+    100% {
+      transform: translateX(100vw);
+    }
+  }
+}
+
 html {
   box-sizing: border-box;
   color-scheme: light;
@@ -5,6 +68,7 @@ html {
   font-family: ff-meta-serif-web-pro, Georgia, serif;
   font-weight: 400;
   font-style: normal;
+  line-height: normal;
   -webkit-font-smoothing: antialiased;
 }
 

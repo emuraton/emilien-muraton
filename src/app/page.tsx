@@ -1,5 +1,3 @@
-'use client';
-
 import Intro from '../components/Intro';
 import Portfolio from '../components/Portfolio';
 
