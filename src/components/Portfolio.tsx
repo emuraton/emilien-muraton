@@ -16,7 +16,6 @@ const Portfolio = () => (
       url="https://ecommerce-next-emuraton.now.sh/"
       images={[ecommerceImg, ecommerceRoomImg]}
       withBorderBottom
-      isApp
     />
     <Project
       title="Exchange rate tool"
@@ -30,7 +29,6 @@ const Portfolio = () => (
       description="Early stage native app with fun animation / UI"
       url="https://github.com/emuraton/musicApp/"
       images={[musicAppGif]}
-      isApp
     />
   </>
 );
