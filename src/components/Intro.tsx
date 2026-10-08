@@ -1,4 +1,4 @@
-import SocialMedias from './SocialMedias';
+import { SocialMedias } from './SocialMedias';
 import { Bird } from './svgs/Bird';
 import Cloud from './svgs/Cloud';
 import EiffelTower from './svgs/EiffelTower';

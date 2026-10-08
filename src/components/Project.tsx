@@ -8,7 +8,6 @@ interface ProjectProps {
   url: string;
   images: StaticImageData[];
   withBorderBottom?: boolean;
-  isApp?: boolean;
 }
 
 const Project = ({
@@ -17,14 +16,11 @@ const Project = ({
   url,
   images,
   withBorderBottom,
-  isApp,
 }: ProjectProps) => {
   const hasMultipleImages = images.length > 1;
   const imageWidthClassName = hasMultipleImages
-    ? 'w-2/5'
-    : isApp
-      ? 'max-[414px]:w-2/5'
-      : 'max-[414px]:w-full';
+    ? 'w-[15%]'
+    : 'max-[414px]:w-full';
   const imageClassName = `h-[560px] object-contain transition-all duration-500 ease-[ease] hover:scale-105 max-[414px]:h-full max-[414px]:max-h-[260px] ${
     imageWidthClassName
   }`;
